@@ -36,7 +36,7 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden bg-secondary flex items-center justify-center">
+            <div className="aspect-square rounded-lg overflow-hidden bg-secondary flex items-center justify-center">
               <img
                 src="/demolition-excavator-at-construction-site.jpg"
                 alt="Demolition equipment at work"
