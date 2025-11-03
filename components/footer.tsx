@@ -10,7 +10,7 @@ export function Footer() {
               McGhee <span className="text-primary">Demolition</span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md leading-relaxed">
-              Professional demolition and contracting services with over 20 years of experience. Licensed, insured, and
+              Professional demolition and contracting services with over 25 years of experience. Licensed, insured, and
               committed to excellence.
             </p>
           </div>
