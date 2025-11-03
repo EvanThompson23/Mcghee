@@ -36,11 +36,11 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden bg-secondary">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden bg-secondary flex items-center justify-center">
               <img
                 src="/demolition-excavator-at-construction-site.jpg"
                 alt="Demolition equipment at work"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/10 rounded-lg -z-10" />
