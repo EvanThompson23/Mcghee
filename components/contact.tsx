@@ -26,7 +26,7 @@ export function Contact() {
                 href="tel:+17322422770"
                 className="text-2xl font-bold text-foreground hover:text-primary transition-colors block"
               >
-                (732) 242-2270
+                (732) 242-2770
               </a>
               <p className="text-sm text-muted-foreground mt-2">Call us anytime</p>
             </CardContent>
