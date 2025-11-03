@@ -17,7 +17,7 @@ export function About() {
               Built on Experience, Driven by Excellence
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              McGhee Demolition & Contracting has been serving the community for over 20 years. We specialize in safe,
+              McGhee Demolition & Contracting has been serving the community for over 25 years. We specialize in safe,
               efficient demolition and site preparation services for projects of all sizes.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
