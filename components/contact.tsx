@@ -23,7 +23,7 @@ export function Contact() {
             </CardHeader>
             <CardContent className="text-center">
               <a
-                href="tel:+17322422270"
+                href="tel:+17322422770"
                 className="text-2xl font-bold text-foreground hover:text-primary transition-colors block"
               >
                 (732) 242-2270
@@ -75,7 +75,7 @@ export function Contact() {
             <CardContent className="text-center">
               <p className="text-lg font-semibold mb-2">24/7 Available</p>
               <Button variant="secondary" size="lg" className="w-full" asChild>
-                <a href="tel:+17328592194">Call Now</a>
+                <a href="tel:+17322422770">Call Now</a>
               </Button>
             </CardContent>
           </Card>
