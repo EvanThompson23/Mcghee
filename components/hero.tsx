@@ -33,7 +33,7 @@ export function Hero() {
 
           <div className="mt-12 grid grid-cols-3 gap-8 max-w-2xl">
             <div>
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-1">20+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-1">25+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div>
