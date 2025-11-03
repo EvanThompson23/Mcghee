@@ -24,7 +24,7 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="text-base bg-transparent">
-              <Link href="tel:+1234567890">
+              <Link href="tel:+17322422770">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
               </Link>
