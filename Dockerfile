@@ -19,4 +19,4 @@ RUN npm install --legacy-peer-deps
 EXPOSE 3000
 
 # Start app
-CMD ["npm", "run", "dev", "--", "-H", "0.0.0.0"]
+CMD ["npm", "run", "dev", "--", "-H", "192.100.1.12"]
