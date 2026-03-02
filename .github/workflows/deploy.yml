@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger Dokploy Deploy Webhook
+      - name: Trigger Dokploy Deploy
         run: |
           curl -X POST "https://dokploy.evanthompson.net/api/deploy/xGQFg2wWHGi0V-kM5a_Id" \
           -H "Content-Type: application/json"
