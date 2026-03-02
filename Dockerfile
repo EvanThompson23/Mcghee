@@ -7,7 +7,7 @@ RUN apt-get update -y && \
 RUN rm -rf /var/lib/apt/lists/*
 
 # Install dependencies
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Expose dev server port (change if your app uses another)
 EXPOSE 3000
