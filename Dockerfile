@@ -4,9 +4,6 @@ FROM node:20
 # Install system dependencies
 RUN apt-get update -y && \
     apt-get upgrade
-    
-# Set working directory
-WORKDIR /app
 
 # Install dependencies
 RUN npm install
