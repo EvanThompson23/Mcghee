@@ -4,6 +4,7 @@ FROM node:20
 # Install system dependencies
 RUN apt-get update -y && \
     apt-get upgrade
+RUN rm -rf /var/lib/apt/lists/*
 
 # Install dependencies
 RUN npm install
