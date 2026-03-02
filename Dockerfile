@@ -4,7 +4,8 @@ FROM node:20
 # Install system dependencies
 RUN apt-get update -y && \
     apt-get upgrade
-RUN rm -rf /var/lib/apt/lists/*
+
+WORKDIR .
 
 # Install dependencies
 RUN npm install --legacy-peer-deps
