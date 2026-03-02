@@ -1,17 +1,14 @@
-# Use official Node 20 image
-FROM node:20
+FROM node:20-alpine
 
-# Install system dependencies
-RUN apt-get update -y && \
-    apt-get upgrade
+WORKDIR /app
 
-WORKDIR .
+COPY package*.json ./
+RUN npm install
 
-# Install dependencies
-RUN npm install --legacy-peer-deps
+COPY . .
 
-# Expose dev server port (change if your app uses another)
+RUN npm run build
+
 EXPOSE 3000
 
-# Start app
-CMD ["npm", "run", "dev", "--", "-H", "0.0.0.0"]
+CMD ["npm", "start"]
