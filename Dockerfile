@@ -9,7 +9,7 @@ RUN apt-get update -y && \
 WORKDIR /app
 
 # Install dependencies
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Expose dev server port (change if your app uses another)
 EXPOSE 3000
