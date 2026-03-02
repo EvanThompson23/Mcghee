@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated from deep navy blue to slate gray for a more neutral, professional look */
+  /* Updated from deep navy blue to slate gray for a more neutral, professional look  */
   --background: oklch(0.18 0.02 240);
   --foreground: oklch(0.98 0.01 240);
 
