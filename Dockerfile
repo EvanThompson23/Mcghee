@@ -9,9 +9,6 @@ RUN apt-get update -y && \
 # Set working directory
 WORKDIR /app
 
-# Clone repo
-RUN git clone https://github.com/EvanThompson23/Mcghee.git .
-
 # Install dependencies
 RUN npm install --legacy-peer-deps
 
