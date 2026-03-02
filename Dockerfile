@@ -1,30 +1,34 @@
-# ---------- Builder ----------
+# -------- Build Stage --------
 FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm ci
+# Install deps (pnpm lock present)
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm
+RUN pnpm install
 
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
-
-# ---------- Runner ----------
+# -------- Production Stage --------
 FROM node:20-alpine
 
 WORKDIR /app
 
 ENV NODE_ENV=production
 ENV PORT=3000
-ENV HOSTNAME=0.0.0.0
 
-COPY --from=builder /app/package*.json ./
-RUN npm ci --omit=dev
+COPY --from=builder /app/package.json ./
+COPY --from=builder /app/pnpm-lock.yaml ./
 
+RUN npm install -g pnpm
+RUN pnpm install --prod
+
+# Copy compiled output
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/next.config.js ./next.config.js
+COPY --from=builder /app/next.config.mjs ./next.config.mjs
 
 EXPOSE 3000
 
