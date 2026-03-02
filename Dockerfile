@@ -4,6 +4,7 @@ FROM node:20
 # Install system dependencies
 RUN apt-get update -y && \
     apt-get install -y git curl && \
+    rm -rf /var/lib/apt/lists/*
     
 # Set working directory
 WORKDIR /app
