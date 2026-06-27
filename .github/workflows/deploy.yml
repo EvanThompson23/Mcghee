@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Trigger Dokploy Deploy
         run: |
-          curl -X POST "https://dokploy.evanthompson.net/api/deploy/xGQFg2wWHGi0V-kM5a_Id" \
+          curl -X POST "https://dokploy.evanthompson.net/api/deploy/OEDYa69y41DRDLDJuxFwA" \
           -H "Content-Type: application/json"
